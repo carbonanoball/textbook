@@ -435,7 +435,7 @@ actually the increment function, not the identify function. So passing it a
 `bool` or `string` or some complicated data structure is not safe; the only data
 `+` can safely manipulate are integers.
 
-Function `id''` is maybe less obviously wrong. If follow the chain of definition
+Function `id''` is maybe less obviously wrong. If we follow the chain of definition
 backwards, we discover that `id''` is really going to be just `fun x -> x`.
 There's nothing wrong with that code as the implementation of `id''`: it's
 guaranteed to return an output of the same type as its input, because it *does*
